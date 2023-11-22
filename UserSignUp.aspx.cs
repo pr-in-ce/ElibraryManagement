@@ -92,11 +92,27 @@ namespace ElibraryManagement
                 con.Close();
 
                 Response.Write("<script>alert('Sign Up successful. Go to User Login to Login')</script>");
+
+                ClearForm();
             }
             catch (Exception ex)
             {
                 Response.Write("<script>alert('" + ex.Message + "');</script>");
             }
+        }
+
+        void ClearForm()
+        {
+            TextBoxFullName.Text = "";
+            TextBoxDateOfBirth.Text = "";
+            TextBoxContactNumber.Text = "";
+            TextBoxEmailId.Text = "";
+            DropDownListState.Text = "";
+            TextBoxCity.Text = "";
+            TextBoxPincode.Text = "";
+            TextBoxFullAddress.Text = "";
+            TextBoxUserId.Text = "";
+            TextBoxPassword.Text = "";
         }
 
     }

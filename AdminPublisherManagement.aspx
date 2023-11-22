@@ -33,27 +33,27 @@
                                 <label>Publisher ID</label>
                                 <div class="form-group">
                                     <div class="input-group">
-                                        <asp:TextBox CssClass="form-control" ID="TextBox1" runat="server" placeholder="ID"></asp:TextBox>
-                                        <asp:Button class="btn btn-primary" ID="Button1" runat="server" Text="Go" />
+                                        <asp:TextBox CssClass="form-control" ID="TextBoxPublisherId" runat="server" placeholder="ID"></asp:TextBox>
+                                        <asp:Button class="btn btn-primary" ID="btnGo" runat="server" Text="Go" />
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-8">
                                 <label>Publisher Name</label>
                                 <div class="form-group">
-                                    <asp:TextBox CssClass="form-control" ID="TextBox2" runat="server" placeholder="Publisher Name"></asp:TextBox>
+                                    <asp:TextBox CssClass="form-control" ID="TextBoxPublisherName" runat="server" placeholder="Publisher Name"></asp:TextBox>
                                 </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-4">
-                                <asp:Button ID="Button2" class="btn btn-lg btn-block btn-success" runat="server" Text="Add" />
+                                <asp:Button ID="btnAdd" class="btn btn-lg btn-block btn-success" runat="server" Text="Add" />
                             </div>
                             <div class="col-4">
-                                <asp:Button ID="Button3" class="btn btn-lg btn-block btn-warning" runat="server" Text="Update" />
+                                <asp:Button ID="btnUpdate" class="btn btn-lg btn-block btn-warning" runat="server" Text="Update" />
                             </div>
                             <div class="col-4">
-                                <asp:Button ID="Button4" class="btn btn-lg btn-block btn-danger" runat="server" Text="Delete" />
+                                <asp:Button ID="btnDelete" class="btn btn-lg btn-block btn-danger" runat="server" Text="Delete" />
                             </div>
                         </div>
                     </div>
@@ -78,7 +78,7 @@
                         </div>
                         <div class="row">
                             <div class="col">
-                                <asp:GridView class="table table-striped table-bordered" ID="GridView1" runat="server"></asp:GridView>
+                                <asp:GridView class="table table-striped table-bordered" ID="GridViewPublisherList" runat="server"></asp:GridView>
                             </div>
                         </div>
                     </div>
