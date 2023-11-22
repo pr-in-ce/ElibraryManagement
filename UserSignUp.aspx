@@ -44,7 +44,7 @@
                             <div class="col-md-6">
                                 <label><b>Date of birth</b></label>
                                 <div class="form-group">
-                                    <asp:TextBox CssClass="form-control" ID="TextBoxDate" runat="server" placeholder="Date of birth" TextMode="Date"></asp:TextBox>
+                                    <asp:TextBox CssClass="form-control" ID="TextBoxDateOfBirth" runat="server" placeholder="Date of birth" TextMode="Date"></asp:TextBox>
                                 </div>
                             </div>
                         </div>
@@ -53,14 +53,14 @@
                             <div class="col-md-6">
                                 <label><b>Contact Number</b></label>
                                 <div class="form-group">
-                                    <asp:TextBox CssClass="form-control" ID="TextBox3" runat="server" placeholder="Contact Number" TextMode="Number"></asp:TextBox>
+                                    <asp:TextBox CssClass="form-control" ID="TextBoxContactNumber" runat="server" placeholder="Contact Number" TextMode="Number"></asp:TextBox>
                                 </div>
                             </div>
 
                             <div class="col-md-6">
                                 <label><b>Email ID</b></label>
                                 <div class="form-group">
-                                    <asp:TextBox CssClass="form-control" ID="TextBox4" runat="server" placeholder="Email ID" TextMode="Email"></asp:TextBox>
+                                    <asp:TextBox CssClass="form-control" ID="TextBoxEmailId" runat="server" placeholder="Email ID" TextMode="Email"></asp:TextBox>
                                 </div>
                             </div>
                         </div>
@@ -69,7 +69,7 @@
                             <div class="col-md-4">
                                 <label><b>State</b></label>
                                 <div class="form-group">
-                                    <asp:DropDownList CssClass="form-control" ID="DropDownList1" runat="server">
+                                    <asp:DropDownList CssClass="form-control" ID="DropDownListState" runat="server">
 
                                         <asp:ListItem Text="Select" Value="select" />
                                         <asp:ListItem Text="Andhra Pradesh" Value="Andhra Pradesh" />
@@ -110,14 +110,14 @@
                             <div class="col-md-4">
                                 <label><b>City</b></label>
                                 <div class="form-group">
-                                    <asp:TextBox Class="form-control" ID="TextBox6" runat="server" placeholder="City"></asp:TextBox>
+                                    <asp:TextBox Class="form-control" ID="TextBoxCity" runat="server" placeholder="City"></asp:TextBox>
                                 </div>
                             </div>
 
                             <div class="col-md-4">
                                 <label><b>Pin Code</b></label>
                                 <div class="form-group">
-                                    <asp:TextBox Class="form-control" ID="TextBox7" runat="server" placeholder="Pin Code" TextMode="Number"></asp:TextBox>
+                                    <asp:TextBox Class="form-control" ID="TextBoxPincode" runat="server" placeholder="Pin Code" TextMode="Number"></asp:TextBox>
                                 </div>
                             </div>
                         </div>
@@ -126,7 +126,7 @@
                             <div class="col">
                                 <label><b>Full Address</b></label>
                                 <div class="form-group">
-                                    <asp:TextBox CssClass="form-control" ID="TextBox8" runat="server" placeholder="Full Address" TextMode="MultiLine" Rows="2"></asp:TextBox>
+                                    <asp:TextBox CssClass="form-control" ID="TextBoxFullAddress" runat="server" placeholder="Full Address" TextMode="MultiLine" Rows="2"></asp:TextBox>
                                 </div>
                             </div>
                         </div>
@@ -144,13 +144,13 @@
                             <div class="col-md-6">
                                 <label><b>User ID</b></label>
                                 <div class="form-group">
-                                    <asp:TextBox class="form-control" ID="TextBox1" runat="server" placeholder="User ID" ReadOnly="True"></asp:TextBox>
+                                    <asp:TextBox class="form-control" ID="TextBoxUserId" runat="server" placeholder="User ID"></asp:TextBox>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <label><b>Password</b></label>
                                 <div class="form-group">
-                                    <asp:TextBox class="form-control" ID="TextBox9" runat="server" placeholder="Password" TextMode="Password" ReadOnly="True"></asp:TextBox>
+                                    <asp:TextBox class="form-control" ID="TextBoxPassword" runat="server" placeholder="Password" TextMode="Password"></asp:TextBox>
                                 </div>
                             </div>
 
@@ -160,7 +160,7 @@
                             <div class="col-12 mx-auto">
                                 <center>
                                     <div class="form-group">
-                                        <asp:Button class="btn btn-success btn-block btn-lg" ID="btnSignUp" runat="server" Text="Sign Up" />
+                                        <asp:Button class="btn btn-success btn-block btn-lg" ID="btnSignUp" runat="server" Text="Sign Up" OnClick="btnSignUp_Click" />
                                     </div>
                                 </center>
                             </div>

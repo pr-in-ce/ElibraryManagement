@@ -97,7 +97,7 @@
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-12 text-center">
                         <p>
-                            <asp:LinkButton class="footerlinks"  ID="btnAdminLogin" runat="server">Admin Login</asp:LinkButton>
+                            <asp:LinkButton class="footerlinks"  ID="btnAdminLogin" runat="server" OnClick="btnAdminLogin_Click">Admin Login</asp:LinkButton>
                             &nbsp;
                             <asp:LinkButton class="footerlinks" ID="btnAuthorManagement" runat="server" OnClick="btnAuthorManagement_Click" Visible="False">Author Management</asp:LinkButton>
                             &nbsp; 

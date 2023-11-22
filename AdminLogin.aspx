@@ -37,7 +37,7 @@
                         <div class="col">
                             <label>Admin Id</label>
                             <div class="form-group">
-                                <asp:TextBox CssClass="form-control" ID="TextBox1" runat="server" placeholder="Member Id"></asp:TextBox>
+                                <asp:TextBox CssClass="form-control" ID="TextBoxMemberId" runat="server" placeholder="Member Id"></asp:TextBox>
                             </div>
                         </div>
                     </div>
@@ -46,10 +46,10 @@
                         <div class="col">
                             <label>Password</label>
                             <div class="form-group">
-                                <asp:TextBox CssClass="form-control" ID="TextBox2" runat="server" placeholder="Password" TextMode="Password"></asp:TextBox>
+                                <asp:TextBox CssClass="form-control" ID="TextBoxPassword" runat="server" placeholder="Password" TextMode="Password"></asp:TextBox>
                             </div>
                             <div class="form-group">
-                                <asp:Button class="btn btn-success btn-block" ID="btnAdminLogIn" runat="server" Text="Login" />
+                                <asp:Button class="btn btn-success btn-block" ID="btnAdminLogIn" runat="server" Text="Login" OnClick="btnAdminLogIn_Click" />
                             </div>
 
                         </div>
