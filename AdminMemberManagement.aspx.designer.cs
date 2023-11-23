@@ -15,147 +15,147 @@ namespace ElibraryManagement
     {
 
         /// <summary>
-        /// TextBox1 control.
+        /// TextBoxMemberId control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox1;
+        protected global::System.Web.UI.WebControls.TextBox TextBoxMemberId;
 
         /// <summary>
-        /// LinkButton4 control.
+        /// btnMemberId control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton4;
+        protected global::System.Web.UI.WebControls.LinkButton btnMemberId;
 
         /// <summary>
-        /// TextBox2 control.
+        /// TextBoxFullName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox2;
+        protected global::System.Web.UI.WebControls.TextBox TextBoxFullName;
 
         /// <summary>
-        /// TextBox7 control.
+        /// TextBoxAccountStatus control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox7;
+        protected global::System.Web.UI.WebControls.TextBox TextBoxAccountStatus;
 
         /// <summary>
-        /// LinkButton1 control.
+        /// btnMemberStatusActive control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton1;
+        protected global::System.Web.UI.WebControls.LinkButton btnMemberStatusActive;
 
         /// <summary>
-        /// LinkButton2 control.
+        /// btnMemberStatusPending control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton2;
+        protected global::System.Web.UI.WebControls.LinkButton btnMemberStatusPending;
 
         /// <summary>
-        /// LinkButton3 control.
+        /// btnMemberStatusDeactive control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton3;
+        protected global::System.Web.UI.WebControls.LinkButton btnMemberStatusDeactive;
 
         /// <summary>
-        /// TextBox8 control.
+        /// TextBoxDateOfBirth control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox8;
+        protected global::System.Web.UI.WebControls.TextBox TextBoxDateOfBirth;
 
         /// <summary>
-        /// TextBox3 control.
+        /// TextBoxContactNo control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox3;
+        protected global::System.Web.UI.WebControls.TextBox TextBoxContactNo;
 
         /// <summary>
-        /// TextBox4 control.
+        /// TextBoxEmailId control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox4;
+        protected global::System.Web.UI.WebControls.TextBox TextBoxEmailId;
 
         /// <summary>
-        /// TextBox9 control.
+        /// TextBoxState control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox9;
+        protected global::System.Web.UI.WebControls.TextBox TextBoxState;
 
         /// <summary>
-        /// TextBox10 control.
+        /// TextBoxCity control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox10;
+        protected global::System.Web.UI.WebControls.TextBox TextBoxCity;
 
         /// <summary>
-        /// TextBox11 control.
+        /// TextBoxPinCode control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox11;
+        protected global::System.Web.UI.WebControls.TextBox TextBoxPinCode;
 
         /// <summary>
-        /// TextBox6 control.
+        /// TextBoxFullAddress control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox6;
+        protected global::System.Web.UI.WebControls.TextBox TextBoxFullAddress;
 
         /// <summary>
-        /// Button2 control.
+        /// btnDeleteUserPermanently control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button2;
+        protected global::System.Web.UI.WebControls.Button btnDeleteUserPermanently;
 
         /// <summary>
-        /// GridView1 control.
+        /// GridViewMemberList control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridView1;
+        protected global::System.Web.UI.WebControls.GridView GridViewMemberList;
     }
 }
