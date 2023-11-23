@@ -14,10 +14,33 @@ namespace ElibraryManagement
     public partial class AdminAuthorManagement : System.Web.UI.Page
     {
 
+        // Connection string configuration 
         string strcon = ConfigurationManager.ConnectionStrings["con"].ConnectionString;
         protected void Page_Load(object sender, EventArgs e)
         {
             LoadRecord();
+        }
+
+        // Go button click
+        protected void btnGo_Click(object sender, EventArgs e)
+        {
+
+            // Using Sql Data Adapter 
+
+            GetAuthorById();
+
+            // Using Sql Data Reader 
+
+            /*if (CheckIfAuthorExists())
+            {
+                GetAuthorById();
+                LoadRecord();   
+            }
+            else
+            {
+                Response.Write("<script>alert('Author with this ID Does not exist !');</script>");
+                ClearForm();
+            }*/
         }
 
         // Add button click
@@ -62,30 +85,10 @@ namespace ElibraryManagement
             }
         }
 
-        // Go button click
-        protected void btnGo_Click(object sender, EventArgs e)
-        {
+        
 
-            // Using Sql Data Adapter 
-
-            GetAuthorById();
-
-            // Using Sql Data Reader 
-
-            /*if (CheckIfAuthorExists())
-            {
-                GetAuthorById();
-                LoadRecord();   
-            }
-            else
-            {
-                Response.Write("<script>alert('Author with this ID Does not exist !');</script>");
-                ClearForm();
-            }*/
-        }
 
         // User defined function for adding new author 
-
         void AddNewAuthor()
         {
             try
@@ -115,9 +118,7 @@ namespace ElibraryManagement
 
         }
 
-
         // User defined function for Update new author 
-
         void UpdateAuthor()
         {
             try
@@ -145,8 +146,7 @@ namespace ElibraryManagement
             }
         }
 
-        // User defined function for Update new author 
-
+        // User defined function for Delete new author 
         void DeleteAuthor()
         {
             try
@@ -208,8 +208,7 @@ namespace ElibraryManagement
 
         }
 
-        // User defined function for GO
-
+        // User defined function for Getting information by Id
         void GetAuthorById()
         {
             try
@@ -252,19 +251,9 @@ namespace ElibraryManagement
                 Response.Write("<script>alert('" + ex.Message + "');</script>");
             }
 
-        }
-
-        // User Defined function for clear the form
-        void ClearForm()
-        {
-            TextBoxAuthorId.Text = "";
-            TextBoxAuthorName.Text = "";
-
-        }
-
+        }        
 
         // User defined function for Gridview Record 
-
         void LoadRecord()
         {
 
@@ -278,6 +267,14 @@ namespace ElibraryManagement
             GridViewAuthorList.DataSource = reader;
             GridViewAuthorList.DataBind();
             con.Close();
+        }
+
+        // User Defined function for clear the form
+        void ClearForm()
+        {
+            TextBoxAuthorId.Text = "";
+            TextBoxAuthorName.Text = "";
+
         }
     }
 }
