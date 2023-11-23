@@ -17,7 +17,7 @@ namespace ElibraryManagement
         string strcon = ConfigurationManager.ConnectionStrings["con"].ConnectionString;
         protected void Page_Load(object sender, EventArgs e)
         {
-            LoadRecord();
+            
         }
 
         // Go button click
