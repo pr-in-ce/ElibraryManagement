@@ -14,10 +14,33 @@ namespace ElibraryManagement
     public partial class AdminAuthorManagement : System.Web.UI.Page
     {
 
+        // Connection string configuration 
         string strcon = ConfigurationManager.ConnectionStrings["con"].ConnectionString;
         protected void Page_Load(object sender, EventArgs e)
         {
             LoadRecord();
+        }
+
+        // Go button click
+        protected void btnGo_Click(object sender, EventArgs e)
+        {
+
+            // Using Sql Data Adapter 
+
+            GetAuthorById();
+
+            // Using Sql Data Reader 
+
+            /*if (CheckIfAuthorExists())
+            {
+                GetAuthorById();
+                LoadRecord();   
+            }
+            else
+            {
+                Response.Write("<script>alert('Author with this ID Does not exist !');</script>");
+                ClearForm();
+            }*/
         }
 
         // Add button click
@@ -62,30 +85,10 @@ namespace ElibraryManagement
             }
         }
 
-        // Go button click
-        protected void btnGo_Click(object sender, EventArgs e)
-        {
 
-            // Using Sql Data Adapter 
 
-            GetAuthorById();
-
-            // Using Sql Data Reader 
-
-            /*if (CheckIfAuthorExists())
-            {
-                GetAuthorById();
-                LoadRecord();   
-            }
-            else
-            {
-                Response.Write("<script>alert('Author with this ID Does not exist !');</script>");
-                ClearForm();
-            }*/
-        }
 
         // User defined function for adding new author 
-
         void AddNewAuthor()
         {
             try
@@ -115,9 +118,7 @@ namespace ElibraryManagement
 
         }
 
-
         // User defined function for Update new author 
-
         void UpdateAuthor()
         {
             try
@@ -128,7 +129,7 @@ namespace ElibraryManagement
                     con.Open();
                 }
 
-                SqlCommand cmd = new SqlCommand("UPDATE author_master_tbl SET author_name=@author_name WHERE author_id='"+TextBoxAuthorId.Text.Trim()+"'", con);
+                SqlCommand cmd = new SqlCommand("UPDATE author_master_tbl SET author_name=@author_name WHERE author_id='" + TextBoxAuthorId.Text.Trim() + "'", con);
 
                 cmd.Parameters.AddWithValue("@author_name", TextBoxAuthorName.Text.Trim());
 
@@ -145,8 +146,7 @@ namespace ElibraryManagement
             }
         }
 
-        // User defined function for Update new author 
-
+        // User defined function for Delete new author 
         void DeleteAuthor()
         {
             try
@@ -208,8 +208,7 @@ namespace ElibraryManagement
 
         }
 
-        // User defined function for GO
-
+        // User defined function for Getting information by Id
         void GetAuthorById()
         {
             try
@@ -228,7 +227,8 @@ namespace ElibraryManagement
                 DataTable dt = new DataTable();
                 da.Fill(dt);
 
-                if (dt.Rows.Count >= 1) {
+                if (dt.Rows.Count >= 1)
+                {
                     TextBoxAuthorName.Text = dt.Rows[0][1].ToString();
                 }
                 else
@@ -254,30 +254,28 @@ namespace ElibraryManagement
 
         }
 
+        // User defined function for Gridview Record 
+        void LoadRecord()
+        {
+
+            SqlConnection con = new SqlConnection(strcon);
+            if (con.State == ConnectionState.Closed)
+            {
+                con.Open();
+            }
+            SqlCommand cmd = new SqlCommand("SELECT * from author_master_tbl", con);
+            SqlDataReader reader = cmd.ExecuteReader();
+            GridViewAuthorList.DataSource = reader;
+            GridViewAuthorList.DataBind();
+            con.Close();
+        }
+
         // User Defined function for clear the form
         void ClearForm()
         {
             TextBoxAuthorId.Text = "";
             TextBoxAuthorName.Text = "";
 
-        }
-
-
-        // User defined function for Gridview Record 
-
-        void LoadRecord()
-        {
-
-            SqlConnection con = new SqlConnection(strcon);
-            if (con.State== ConnectionState.Closed)
-            {
-                con.Open();
-            }
-            SqlCommand cmd= new SqlCommand("SELECT * from author_master_tbl", con);
-            SqlDataReader reader = cmd.ExecuteReader();
-            GridViewAuthorList.DataSource = reader;
-            GridViewAuthorList.DataBind();
-            con.Close();
         }
     }
 }
