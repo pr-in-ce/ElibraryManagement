@@ -47,7 +47,7 @@ namespace ElibraryManagement
         {
             if (CheckIfPublisherExists())
             {
-                Response.Write("<script>alert('Publisher with this ID already exist !');</script>");
+                Response.Write("<script>alert('Author with this ID already exist !');</script>");
             }
             else
             {
@@ -68,7 +68,7 @@ namespace ElibraryManagement
             }
             else
             {
-                Response.Write("<script>alert('Publisher with this ID Does not exist !');</script>");
+                Response.Write("<script>alert('Author with this ID Does not exist !');</script>");
             }
         }
 
@@ -82,7 +82,7 @@ namespace ElibraryManagement
             }
             else
             {
-                Response.Write("<script>alert('Publisher with this ID Does not exist !');</script>");
+                Response.Write("<script>alert('Author with this ID Does not exist !');</script>");
             }
         }
 
